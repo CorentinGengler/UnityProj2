@@ -6,7 +6,20 @@ public class Enemy  : DualBehaviour
 {
 
     #region Public Members
-    
+    public enum e_characterState
+    {
+        INVALID = -1,
+        STANDING,
+        DUCKING,
+        JUMPING,
+        FLOATING,
+        SLEEPING,
+        WALKING,
+
+        MAX
+    }
+    public e_characterState m_characterState = e_characterState.STANDING;
+
     #endregion
 
 
