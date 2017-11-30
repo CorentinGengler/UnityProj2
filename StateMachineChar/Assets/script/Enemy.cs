@@ -38,7 +38,7 @@ public class Enemy  : DualBehaviour
     void Awake () 
     {
         m_NPCBody = m_transform.GetComponent<Rigidbody2D>();
-        m_NPCCollider2D = m_transform.GetComponent< CircleCollider2D>();
+        m_NPCCollider2D = m_transform.GetComponent<CircleCollider2D>();
     }
 	
 	void Update () 
@@ -85,13 +85,22 @@ public class Enemy  : DualBehaviour
                 
                 break;
             case e_characterState.CHASSINGMC:
+                Transform Player = m_GC.m_MC.transform;
+                float moveAxeX = transform.position.x - Player.position.x;
+                float moveAxeY = transform.position.y - Player.position.y;
+                //transform.position = Vector2.MoveTowards(transform.position, Player.position, m_moveSpeed * Time.deltaTime);
+
+
+                Debug.Log(moveAxeX + " " + moveAxeY);
+                // m_canvasTextMidEcran.enabled = true;
+                //m_GC.KillThemAll();
+
                 break;
             case e_characterState.SENSESOMETHING:
                 m_isPayingAttention = true;
                 m_moveSpeed = 0f;
                 m_justStopped = true;
                 m_timerSensing += Time.deltaTime;
-
                 m_NPCCollider2D.radius = 0.5f + m_timerSensing * 0.3f;
                 m_detectZone.transform.localScale = new Vector2(0.5f + m_timerSensing * 0.3f, 0.5f + m_timerSensing * 0.3f);
                 if (m_timerSensing>3)
@@ -120,10 +129,11 @@ public class Enemy  : DualBehaviour
 
         if (collision.tag == "SoundWave")
         {
-            if(m_isPayingAttention)
+            if (m_isPayingAttention)
             {
-                if(m_timerSensing>1)
+                if (m_timerSensing > 1)
                 {
+                    m_justStopped = false;
                     m_characterState = e_characterState.CHASSINGMC;
                 }
             }
@@ -134,19 +144,34 @@ public class Enemy  : DualBehaviour
                 m_characterState = e_characterState.SENSESOMETHING;
             }
         }
-        if (collision.tag == "Player")
-        {
-            m_canvasTextMidEcran.enabled = true;
-            m_GC.KillThemAll();
-        }
     }
-
+    
     private void NPCMoves()
     {
-        if (m_characterState == e_characterState.WALKING || m_characterState == e_characterState.CHASSINGMC || m_justStopped==true)
+        if (m_characterState == e_characterState.WALKING || m_justStopped==true)
         {
             m_NPCBody.velocity = new Vector2( m_moveSpeed , 0f);
         }
+        else
+        {
+            if (m_characterState == e_characterState.CHASSINGMC)
+            {
+                Transform Player = m_GC.m_MC.transform;
+                //m_NPCBody.velocity = new Vector2(m_moveSpeed, 0f);
+                Vector3 displacement = Player.position - transform.position;
+                displacement = displacement.normalized;
+                if (Vector2.Distance(Player.position, transform.position) > 0.1f)
+                {
+                    transform.position += (displacement * 2 * Time.deltaTime);
+                }
+                else
+                {
+                    m_canvasTextMidEcran.enabled = true;
+                    m_GC.KillThemAll();
+                }
+            }
+        }
+        
     }
 
     #endregion
@@ -162,9 +187,11 @@ public class Enemy  : DualBehaviour
     private float m_timerWalking=0f;
     private Rigidbody2D m_NPCBody;
     private CircleCollider2D m_NPCCollider2D;
+    private Transform m_PlayerChar;
     private bool m_justStopped;
     private bool m_isPayingAttention;
     private float m_timerSensing=0f;
     private e_characterState m_previousState;
+
     #endregion
 }

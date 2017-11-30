@@ -155,6 +155,7 @@ MonoBehaviour:
   m_canvasTextMidEcran: {fileID: 0}
   m_GC: {fileID: 0}
   m_exclamationPoint: {fileID: 1557410108113862}
+  m_detectZone: {fileID: 1380629258801234}
   m_characterState: 0
 --- !u!212 &212472655101797184
 SpriteRenderer:

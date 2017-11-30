@@ -235,7 +235,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1416818786148686, guid: 391f1415dd6e83f4ea9d800dbffc8ee9, type: 2}
       propertyPath: m_Name
-      value: ObstacleCube05_01 (12)
+      value: Plateform02
       objectReference: {fileID: 0}
     - target: {fileID: 4878495281151002, guid: 391f1415dd6e83f4ea9d800dbffc8ee9, type: 2}
       propertyPath: m_LocalScale.x
@@ -368,6 +368,10 @@ Prefab:
       propertyPath: m_Name
       value: ObstacleCube01_05 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1749035369525746, guid: 1c4efa2405794e041a8d566d527ef219, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1c4efa2405794e041a8d566d527ef219, type: 2}
   m_IsPrefabParent: 0
@@ -418,6 +422,10 @@ Prefab:
     - target: {fileID: 1749035369525746, guid: 1c4efa2405794e041a8d566d527ef219, type: 2}
       propertyPath: m_Name
       value: ObstacleCube01_05 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1749035369525746, guid: 1c4efa2405794e041a8d566d527ef219, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1c4efa2405794e041a8d566d527ef219, type: 2}
@@ -488,7 +496,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1416818786148686, guid: 391f1415dd6e83f4ea9d800dbffc8ee9, type: 2}
       propertyPath: m_Name
-      value: ObstacleCube05_01 (13)
+      value: plateform03
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 391f1415dd6e83f4ea9d800dbffc8ee9, type: 2}
@@ -592,6 +600,10 @@ Prefab:
       propertyPath: m_Name
       value: ObstacleCube01_05 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1749035369525746, guid: 1c4efa2405794e041a8d566d527ef219, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1c4efa2405794e041a8d566d527ef219, type: 2}
   m_IsPrefabParent: 0
@@ -638,6 +650,10 @@ Prefab:
       propertyPath: m_Name
       value: ObstacleCube01_05 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1749035369525746, guid: 1c4efa2405794e041a8d566d527ef219, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1c4efa2405794e041a8d566d527ef219, type: 2}
   m_IsPrefabParent: 0
@@ -679,6 +695,10 @@ Prefab:
     - target: {fileID: 4903867837133602, guid: 1c4efa2405794e041a8d566d527ef219, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1749035369525746, guid: 1c4efa2405794e041a8d566d527ef219, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1c4efa2405794e041a8d566d527ef219, type: 2}
@@ -725,6 +745,10 @@ Prefab:
     - target: {fileID: 1749035369525746, guid: 1c4efa2405794e041a8d566d527ef219, type: 2}
       propertyPath: m_Name
       value: ObstacleCube01_05 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1749035369525746, guid: 1c4efa2405794e041a8d566d527ef219, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1c4efa2405794e041a8d566d527ef219, type: 2}
@@ -777,9 +801,18 @@ Prefab:
       propertyPath: m_Name
       value: ObstacleCube01_05 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1749035369525746, guid: 1c4efa2405794e041a8d566d527ef219, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1c4efa2405794e041a8d566d527ef219, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &973586156 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1380629258801234, guid: 2a5902b35193fbc4fb83e86b9ead5862,
+    type: 2}
+  m_PrefabInternal: {fileID: 1450827699}
 --- !u!4 &1095615119 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4687011295304984, guid: e0d5c7674fc0a7c449b9ada2562fccbe,
@@ -956,7 +989,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1416818786148686, guid: 391f1415dd6e83f4ea9d800dbffc8ee9, type: 2}
       propertyPath: m_Name
-      value: ObstacleCube05_01 (7)
+      value: GroundMain
       objectReference: {fileID: 0}
     - target: {fileID: 4878495281151002, guid: 391f1415dd6e83f4ea9d800dbffc8ee9, type: 2}
       propertyPath: m_LocalScale.x
@@ -1141,7 +1174,17 @@ Prefab:
       propertyPath: m_GC
       value: 
       objectReference: {fileID: 1208848203}
-    m_RemovedComponents: []
+    - target: {fileID: 0}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 50335357934621546, guid: 2a5902b35193fbc4fb83e86b9ead5862,
+        type: 2}
+      propertyPath: m_Constraints
+      value: 6
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 2a5902b35193fbc4fb83e86b9ead5862, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1247685377
@@ -1232,6 +1275,10 @@ Prefab:
     - target: {fileID: 1749035369525746, guid: 1c4efa2405794e041a8d566d527ef219, type: 2}
       propertyPath: m_Name
       value: ObstacleCube01_05 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1749035369525746, guid: 1c4efa2405794e041a8d566d527ef219, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1c4efa2405794e041a8d566d527ef219, type: 2}
@@ -1369,7 +1416,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1416818786148686, guid: 391f1415dd6e83f4ea9d800dbffc8ee9, type: 2}
       propertyPath: m_Name
-      value: ObstacleCube05_01 (14)
+      value: Plateform01
       objectReference: {fileID: 0}
     - target: {fileID: 4878495281151002, guid: 391f1415dd6e83f4ea9d800dbffc8ee9, type: 2}
       propertyPath: m_LocalScale.x
@@ -1522,6 +1569,10 @@ Prefab:
     - target: {fileID: 1749035369525746, guid: 1c4efa2405794e041a8d566d527ef219, type: 2}
       propertyPath: m_Name
       value: ObstacleCube01_05 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1749035369525746, guid: 1c4efa2405794e041a8d566d527ef219, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1c4efa2405794e041a8d566d527ef219, type: 2}
@@ -1678,6 +1729,10 @@ Prefab:
       propertyPath: m_Name
       value: ObstacleCube01_05 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1749035369525746, guid: 1c4efa2405794e041a8d566d527ef219, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1c4efa2405794e041a8d566d527ef219, type: 2}
   m_IsPrefabParent: 0
@@ -1819,7 +1874,23 @@ Prefab:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114546744151674278, guid: 2a5902b35193fbc4fb83e86b9ead5862,
+        type: 2}
+      propertyPath: m_SensingZone
+      value: 
+      objectReference: {fileID: 973586156}
+    - target: {fileID: 114546744151674278, guid: 2a5902b35193fbc4fb83e86b9ead5862,
+        type: 2}
+      propertyPath: m_detectZone
+      value: 
+      objectReference: {fileID: 973586156}
+    - target: {fileID: 50335357934621546, guid: 2a5902b35193fbc4fb83e86b9ead5862,
+        type: 2}
+      propertyPath: m_Constraints
+      value: 6
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 2a5902b35193fbc4fb83e86b9ead5862, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1450827700 stripped
@@ -1955,6 +2026,10 @@ Prefab:
     - target: {fileID: 1749035369525746, guid: 1c4efa2405794e041a8d566d527ef219, type: 2}
       propertyPath: m_Name
       value: ObstacleCube01_05 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1749035369525746, guid: 1c4efa2405794e041a8d566d527ef219, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1c4efa2405794e041a8d566d527ef219, type: 2}
