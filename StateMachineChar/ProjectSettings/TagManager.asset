@@ -7,6 +7,8 @@ TagManager:
   - GROUND
   - Enemy
   - SoundWave
+  - PatrolLimitR
+  - PatrolLimitL
   layers:
   - Default
   - TransparentFX

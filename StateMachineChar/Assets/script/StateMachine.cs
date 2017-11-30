@@ -8,7 +8,7 @@ public class StateMachine  : DualBehaviour
     #region Public Members
 
     public GameController m_GC;
-
+    public float m_hSpeed = 1;
     public float m_jumpingSpeed = 3;
     public float m_jumpAscendingTime = 0.5f;
     public GameObject m_SoundWave;
@@ -66,6 +66,7 @@ public class StateMachine  : DualBehaviour
         switch (m_characterState)
         {
             case e_characterState.STANDING:
+                m_hSpeedModifier = 1f;
                 m_hasJumped = false;
                 if (Input.GetButtonDown("Submit"))
                 {
@@ -86,6 +87,7 @@ public class StateMachine  : DualBehaviour
                 }
                 break;
             case e_characterState.DUCKING:
+                m_hSpeedModifier = 0.3f;
                 m_transform.localScale = new Vector2(1f, 0.5f);
                 if (Input.GetAxisRaw("Vertical") != -1)
                 {
@@ -152,6 +154,7 @@ public class StateMachine  : DualBehaviour
                 if (Input.GetButtonDown("Submit"))
                 {
                     m_transform.localScale = new Vector2(1f, 1f);
+                    m_hSpeedModifier = 1f;
                     m_characterState = e_characterState.STANDING;
                 }
                 break;
@@ -190,7 +193,7 @@ public class StateMachine  : DualBehaviour
     {
         if(m_characterState != e_characterState.SLEEPING)
         {
-            MCBody.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), m_moveV);
+            MCBody.velocity = new Vector2(Input.GetAxisRaw("Horizontal")* m_hSpeed* m_hSpeedModifier, m_moveV);
         }
     }
     private void InstanciateSound()
@@ -208,6 +211,7 @@ public class StateMachine  : DualBehaviour
     private bool m_isFalling = false;
     private float m_AscendingTimer = 0;
     private float m_moveV = 0f;
+    private float m_hSpeedModifier = 1f;
     private float m_originalGravityScale;
     private float m_timerSoundWaveMaker;
     private bool m_soundSent;
