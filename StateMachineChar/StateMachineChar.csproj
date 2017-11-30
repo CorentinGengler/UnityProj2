@@ -80,6 +80,8 @@
   <ItemGroup>
     <Compile Include="Assets\DualBehaviour.cs" />
     <Compile Include="Assets\script\Enemy.cs" />
+    <Compile Include="Assets\script\GameController.cs" />
+    <Compile Include="Assets\script\MainChar.cs" />
     <Compile Include="Assets\script\SoundWave.cs" />
     <Compile Include="Assets\script\StateMachine.cs" />
   </ItemGroup>

@@ -2,17 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MainChar  : DualBehaviour
+public class MC  : DualBehaviour
 {
 
     #region Public Members
-
-    public GameController m_GC;
-
-    public float m_jumpingSpeed = 3;
-    public float m_jumpAscendingTime = 0.5f;
-    public GameObject m_SoundWave;
-
     public enum e_characterState
     {
         INVALID=-1,
@@ -31,6 +24,9 @@ public class MainChar  : DualBehaviour
 
 
     #region Public Void
+    public float m_jumpingSpeed = 3;
+    public float m_jumpAscendingTime = 0.5f;
+    public GameObject o_SoundWave;
     #endregion
 
 
@@ -196,7 +192,7 @@ public class MainChar  : DualBehaviour
     }
     private void InstanciateSound()
     {
-        Instantiate(m_SoundWave, m_transform.position, Quaternion.identity);
+        Instantiate(o_SoundWave, m_transform.position, Quaternion.identity);
         //la soundwave est trigger, elle doit avoir son propre script avec si collide avec tage ENEMY, game over, elle doit grandir de point a sphere en 1sec et destroy après
         //elle doit etre 1/2 side si crée qd player bouge en kneeling (un 2eme type d'objet en taille 1/2?)
         //elle doit être créer a chaque saut ou mouvement gauche-droite
