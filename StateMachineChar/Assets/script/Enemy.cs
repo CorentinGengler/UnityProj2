@@ -147,6 +147,10 @@ public class Enemy  : DualBehaviour
                 m_characterState = e_characterState.SENSESOMETHING;
             }
         }
+        if((collision.tag =="PatrolStop")&&(m_characterState == e_characterState.WALKING))
+        {
+            m_characterState = e_characterState.STANDING;
+        }
     }
     
 
