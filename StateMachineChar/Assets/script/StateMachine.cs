@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MainChar  : DualBehaviour
+public class StateMachine  : DualBehaviour
 {
 
     #region Public Members
@@ -22,7 +22,6 @@ public class MainChar  : DualBehaviour
         FLOATING,
         SLEEPING,
         WALKING,
-        FROZEN,
 
         MAX
     }
