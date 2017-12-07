@@ -13,13 +13,11 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile>
-    </CompilerResponseFile>
+    <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2017.1.1f1</UnityVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -84,6 +82,8 @@
     <Compile Include="Assets\script\Camera.cs" />
     <Compile Include="Assets\script\Enemy.cs" />
     <Compile Include="Assets\script\GameController.cs" />
+    <Compile Include="Assets\script\Guard.cs" />
+    <Compile Include="Assets\script\GuardView.cs" />
     <Compile Include="Assets\script\SoundWave.cs" />
     <Compile Include="Assets\script\StateMachine.cs" />
   </ItemGroup>
