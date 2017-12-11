@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-public class MainButton  : Button
+public class MainButton  : MonoBehaviour
 {
 
     #region Public Members
-    
+    public List<Sprite> listOfSprites = new List<Sprite>();
+    public List<string> UpperText = new List<string>();
+    public List<string> LowerText = new List<string>();
     #endregion
 
 
