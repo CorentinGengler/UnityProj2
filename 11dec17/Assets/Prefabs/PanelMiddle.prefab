@@ -71,6 +71,7 @@ GameObject:
   - component: {fileID: 224649180038822472}
   - component: {fileID: 222925025219193244}
   - component: {fileID: 114424657707152682}
+  - component: {fileID: 114730117306085274}
   m_Layer: 5
   m_Name: YES
   m_TagString: Untagged
@@ -105,7 +106,6 @@ GameObject:
   - component: {fileID: 224218664014129050}
   - component: {fileID: 222691531898939474}
   - component: {fileID: 114257541722618086}
-  - component: {fileID: 114093331276030762}
   m_Layer: 5
   m_Name: ImageForeground
   m_TagString: Untagged
@@ -157,6 +157,7 @@ GameObject:
   - component: {fileID: 224005676768840108}
   - component: {fileID: 222034450734450254}
   - component: {fileID: 114336406882005034}
+  - component: {fileID: 114751536727068366}
   m_Layer: 5
   m_Name: NO
   m_TagString: Untagged
@@ -197,36 +198,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Text Below Image
---- !u!114 &114093331276030762
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1513181796213728}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 114700281516597580}
-          m_MethodName: SwitchToNextImageAndText
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
-        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  delegates: []
 --- !u!114 &114257541722618086
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -280,7 +251,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 1
     m_MaxSize: 40
-    m_Alignment: 5
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -340,7 +311,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 1
     m_MaxSize: 40
-    m_Alignment: 3
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -389,17 +360,98 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 7b2f1bee42bbef84b9cde1eed6335b9a, type: 3}
   - {fileID: 21300000, guid: 8c106088b72b32d4bbb212a65c670909, type: 3}
   - {fileID: 21300000, guid: fd0373323fd85594291880baae930985, type: 3}
+  - {fileID: 21300000, guid: d5dfd5bb21598ff42a6af6388113f40a, type: 3}
+  - {fileID: 21300000, guid: ce27525148b58df408e649a8e21f3b19, type: 3}
+  - {fileID: 21300000, guid: 4a1729f5e6ab6e74d8c92050b8d10f05, type: 3}
+  - {fileID: 21300000, guid: 66c29f45947703240b326c7aceb2980b, type: 3}
+  - {fileID: 21300000, guid: ac058c48b444c2c4bafb4fcf0d0e8431, type: 3}
+  - {fileID: 21300000, guid: 183e3921869329a44aa96146c9e3cc6e, type: 3}
+  - {fileID: 21300000, guid: 0aa86dcf4426e644a8fde8dbe564149a, type: 3}
   m_listOfUpperText:
   - UpperText0
   - UpperText1
   - UpperText2
+  - UpperText3
+  - UpperText4
+  - UpperText5
+  - UpperText6
+  - UpperText7
+  - UpperText8
+  - UpperText9
   m_listOfLowerText:
   - LowerText0
   - LowerText1
   - LowerText2
+  - LowerText3
+  - LowerText4
+  - LowerText5
+  - LowerText6
+  - LowerText7
+  - LowerText8
+  - LowerText9
   m_CanvasImage: {fileID: 114257541722618086}
   m_CanvasUpperText: {fileID: 114954684300200004}
   m_CanvasLowerText: {fileID: 114079340238839190}
+--- !u!114 &114730117306085274
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1207826927425032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 114700281516597580}
+          m_MethodName: SwitchToNextImageAndText
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
+--- !u!114 &114751536727068366
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1998084507392510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 114700281516597580}
+          m_MethodName: SwitchToNextImageAndText
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!114 &114938969414827258
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -524,7 +576,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.1}
-  m_AnchorMax: {x: 0.9, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -657,7 +709,7 @@ RectTransform:
   m_Father: {fileID: 224578754972533140}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.1, y: 0.1}
+  m_AnchorMin: {x: 0, y: 0.1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}

@@ -6,10 +6,12 @@ public class MainButton  : MonoBehaviour
 {
 
     #region Public Members
+    [Header ("Contenu possible")]
     public List<Sprite> m_listOfSprites = new List<Sprite>();
     public List<string> m_listOfUpperText = new List<string>();
     public List<string> m_listOfLowerText = new List<string>();
 
+    [Header ("Emplacement contenu")]
     public Image m_CanvasImage;
     public Text m_CanvasUpperText;
     public Text m_CanvasLowerText;
