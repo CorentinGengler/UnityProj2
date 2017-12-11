@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIManager  : DualBehaviour
 {
@@ -9,10 +10,11 @@ public class UIManager  : DualBehaviour
     public GameObject m_buttonContinue;
     public GameObject m_buttonLoadGame;
     public GameObject m_buttonNewGame;
-
     public GameObject m_PanelAreYouSure;
 
     public AudioSource m_HoverSound;
+    
+
     #endregion
 
 
@@ -29,6 +31,7 @@ public class UIManager  : DualBehaviour
         m_HoverSound.Play();
     }
     
+
     #region System
     public void ToggleAreYouSure(bool _status)
     {

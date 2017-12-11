@@ -1,0 +1,64 @@
+Début préprod
+
+outils de communication (slack)
+backup (loin)
+versionning (git)
+déterminer outils (moteur graphique, appli modèle 3d, )
+déterminer nomenclature
+	TEX_ (Texture)
+		MAP_ (maps for 3D objects)
+			DIFF_
+			ALB_
+			NORM_
+			OCC_
+		GUI_ (interface)
+			INGAME_
+			MENU_
+		ANIM_ (spritesheet)
+		SPRI_ (sprite)
+		GFX_ (graphics)
+Input manager
+	Réassignation touches
+	Gestion multijoueur
+Parser
+développer outils pour gamedesign et artiste
+
+Fin de préprod
+
+RNG (Random Number Generator)
+	Difficile à générer, se démerder
+l10n (localization)
+.ini
+
+Technique d'optimisation monde ouvert 
+	LOD : Détails diminuent avec la distance
+	Occlusion : 
+		1/ désactiver tout objet hors champs
+		2/ désactiver tout hors vision
+	Streaming : Affichage gameplay minimisé lors des phase de chargement
+
+Outils de debug
+	Enregistre ce qui se passe au commande pour reproduire
+	Analyse des performances du jeu
+
+Gestion du son
+
+Gameflow (pause, cinématique)
+
+Frontend (interface)
+	barre de vie
+	cinématique
+	écran type
+	écran pause
+
+Codage du jeu
+	state machine
+	animation, mouvement
+	caméra
+		différente angle de vue
+		caméra scripté
+	modèle de collision
+	IA
+	pathfinding
+	rendering
+

@@ -1,0 +1,13 @@
+Nomenclature files:
+TEX_  (textures)
+	MAP_ (maps pour objets 3d)
+		DIFF_
+		ALB_
+		NORM_
+		OCC_
+	GUI_ (interface)
+		INGAME_
+		MENU_
+	ANIM_ (spritesheet)
+	QPRITE (sprite)
+	GFX_ 
