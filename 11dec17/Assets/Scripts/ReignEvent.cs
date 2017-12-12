@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Infos  : MonoBehaviour
+[System.Serializable]
+public class ReignEvent  : MonoBehaviour
 {
 
     #region Public Members
@@ -34,21 +35,7 @@ public class Infos  : MonoBehaviour
     #endregion
 
     #region Private Void
-    private string m_kingname;
-    private int m_score;
-    private int m_years;
-    private string m_dialogue;
-    private string m_imageName;
-    private Sprite m_avatar;
-    private int m_bonusStatus;
-    private string m_leftAnswer;
-    private string m_rightAnswer;
-    private string m_contextBackgroundStr;
-    private Sprite m_contextBackgroundSpr;
-
-
-
-
+    
 
     #endregion
 

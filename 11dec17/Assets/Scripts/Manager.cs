@@ -7,19 +7,20 @@ public class Manager  : MonoBehaviour
 {
 
     #region Public Members
-    [Header ("Icons")]
-    public IconFill FillCrossScript;
-    public IconFill FillPersonScript;
-    public IconFill FillSwordScript;
-    public IconFill FillMoneyScript;
-    [Header ("Dots above Icons")]
-    public UpperDotActivate AboveCrossDotScript;
-    public UpperDotActivate AbovePersonDotScript;
-    public UpperDotActivate AboveSwordDotScript;
-    public UpperDotActivate AboveMoneyDotScript;
     
+    public List<AvatarAndQuestions> ReignEvent;
 
-
+    [System.Serializable]
+    public struct AvatarAndQuestions
+    {
+        public string m_dialogue;
+        public string m_imageName;
+        public Sprite m_avatar;
+        public Sprite m_Background;
+        public string m_leftAnswer;
+        public string m_rightAnswer;
+        public string m_middleAnswer;
+    }
 
     #endregion
 
