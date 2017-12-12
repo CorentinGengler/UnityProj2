@@ -20,6 +20,15 @@ public class Manager  : MonoBehaviour
         public string m_leftAnswer;
         public string m_rightAnswer;
         public string m_middleAnswer;
+        public float m_changeToCrossIfYes;
+        public float m_changeToPersonIfYes;
+        public float m_changeToSwordIfYes;
+        public float m_changeToMoneyIfYes;
+        public float m_changeToCrossIfNo;
+        public float m_changeToPersonIfNo;
+        public float m_changeToSwordIfNo;
+        public float m_changeToMoneyIfNo;
+
     }
 
     #endregion

@@ -11,14 +11,14 @@ public class ReignUIv1  : ReignsUI
 
     [Header("Panel Top")]
 
-    public IconFill m_crossFill;
-    public UpperDotActivate m_crossDot;
-    public IconFill m_personFill;
-    public UpperDotActivate m_personDot;
-    public IconFill m_swordFill;
-    public UpperDotActivate m_swordDot;
-    public IconFill m_moneyFill;
-    public UpperDotActivate m_moneyDot;
+    public Image m_crossFill;
+    public Image m_crossDot;
+    public Image m_personFill;
+    public Image m_personDot;
+    public Image m_swordFill;
+    public Image m_swordDot;
+    public Image m_moneyFill;
+    public Image m_moneyDot;
 
     [Header("Panel Middle")]
     public Text m_upperText;
@@ -109,7 +109,22 @@ public class ReignUIv1  : ReignsUI
 
     public override void SetObjectiveStatus(int index, float pourcentageStatus)
     {
-        throw new System.NotImplementedException();
+        switch(index)
+        {
+            case 1:
+                m_crossFill.fillAmount = pourcentageStatus;
+                break;
+            case 2:
+                m_personFill.fillAmount = pourcentageStatus;
+                break;
+            case 3:
+                m_swordFill.fillAmount = pourcentageStatus;
+                break;
+            case 4:
+                m_moneyFill.fillAmount = pourcentageStatus;
+                break;
+
+        }
     }
 
     public override void SetObjectiveStatus(string objectiveId, float pourcentageStatus)
