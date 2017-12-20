@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
+using UnityEditor;
 
 public class JsonHandler : MonoBehaviour
 {
@@ -28,10 +29,12 @@ public class JsonHandler : MonoBehaviour
     public static void WriteStringOnDrive(string jsonStringToWrite)
     {
         File.WriteAllText("Assets/JsonHolder", jsonStringToWrite);
+        AssetDatabase.Refresh();
     }
 
     public static void WriteStringOnDrive(string jsonStringToWrite, string filePathFromAsset)
     {
         File.WriteAllText("Assets/" + filePathFromAsset, jsonStringToWrite);
+        AssetDatabase.Refresh();
     }
 }
