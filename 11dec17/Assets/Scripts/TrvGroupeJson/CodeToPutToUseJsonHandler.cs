@@ -7,7 +7,7 @@ public class CodeToPutToUseJsonHandler  : MonoBehaviour
 
     #region Public Members
     public string m_pathImages;
-    public string m_Resolution;
+    public int m_Resolution;
     public int m_nbrScreen;
     
     #endregion

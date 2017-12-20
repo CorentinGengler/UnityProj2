@@ -21,9 +21,9 @@ public class JsonHandler : MonoBehaviour
     {
         return File.ReadAllText("Assets/JsonHolder");
     }
-    public static string ReadStringFromFile(string filePathFromAsset)
+    public static string ReadStringFromFile(string filePath)
     {
-        return File.ReadAllText("Assets/" + filePathFromAsset);
+        return File.ReadAllText(filePath);
     }
 
     public static void WriteStringOnDrive(string jsonStringToWrite)
@@ -32,9 +32,9 @@ public class JsonHandler : MonoBehaviour
         AssetDatabase.Refresh();
     }
 
-    public static void WriteStringOnDrive(string jsonStringToWrite, string filePathFromAsset)
+    public static void WriteStringOnDrive(string jsonStringToWrite, string filePath)
     {
-        File.WriteAllText("Assets/" + filePathFromAsset, jsonStringToWrite);
+        File.WriteAllText(filePath, jsonStringToWrite);
         AssetDatabase.Refresh();
     }
 }

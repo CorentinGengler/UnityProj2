@@ -902,7 +902,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_pathImages: 
-  m_Resolution: 
+  m_Resolution: 0
   m_nbrScreen: 0
 --- !u!4 &2085408842
 Transform:
