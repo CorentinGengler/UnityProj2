@@ -128,6 +128,10 @@ public class FenêtreRèglages : EditorWindow
             {
                 Debug.Log("Capture lancée");
 
+                GameObject source2 = (GameObject)source;
+                CreateLab lab = new CreateLab(source2.transform, 5);//2eme donnée = distance
+                GameObject cam = lab.cameraMan;
+                GameObject target = lab.cameraTarget;
             }
 
             GUILayout.Space(pixelsEcart);
@@ -139,6 +143,7 @@ public class FenêtreRèglages : EditorWindow
 
 
     }
+
 
 
 
